@@ -29,7 +29,7 @@ app.get('/api/restaurants', (req,res)=>{
         res.json(data);
     }).catch(err=>{
         console.log(err);
-        res.status(500).send('An Error occured');
+        res.status(500).send(err);
     })
 })
 app.get('/api/menu', (req,res)=>{
